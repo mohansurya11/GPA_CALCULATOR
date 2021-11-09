@@ -1,0 +1,74 @@
+<html>
+<body>
+	<head>
+	<meta charset="utf-8">
+	<title>GPA CAlCULATOR</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ceviche+One&family=Fruktur&family=Fugaz+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="gpa.css">
+
+
+
+
+	<script type="text/javascript" src="gpa.js"></script>
+</head>
+<form Name="GPACalcForm" method="post">
+	<h1><center>GPA CALCULATOR</center></h1>
+	<h2><center>SEMESTER I</center></h2>
+  <h2><center>(Out of 100 Marks)</center></h2>
+  <table BORDER="5" BGCOLOR="#C0C0C0" CELLPADDING="5" CELLSPACING="2" align="CENTER">
+    <tr>
+      <th>Subjects</th>
+      <th>Marks</th>
+      
+    </tr>
+    <tr>
+      <td>Engineering Mathematics-I</td>
+      <td><input TYPE="Number"  id="M1" min="0" max="100"></td>
+      
+    </tr>
+    <tr>
+      <td>Technical English</td>
+      <td><input TYPE="Number"  id="M2" min="0" max="100"></td>
+      
+    </tr>
+    <tr>
+      <td>Electrical and Electronics Engineering</td>
+      <td><input TYPE="Number"  id="M3" min="0" max="100"></td>
+      
+    </tr>
+    <tr>
+      <td>Engineering Chemistry</td>
+      <td><input TYPE="Number"  id="M4" min="0" max="100"></td>
+      
+    </tr>
+    <tr>
+      <td>Python and Problem Solving Techniques</td>
+      <td><input TYPE="Number"  id="M5" min="0" max="100"></td>
+      
+    </tr>
+    <tr>
+      <td>Engineering Chemistry lab(Out of 100)</td>
+      <td><input TYPE="Number"  id="M6" min="0" max="100"></td>
+      
+    </tr>
+    <tr>
+      <td>Python and Problem Solving Techniques lab</td>
+      <td><input TYPE="Number"  id="M7" min="0" max="100"></td>
+      
+    </tr>
+   
+    <tr ALIGN="CENTER">
+      <td><button type="button" id="c" onclick="sem1calc()">Calculate</button>
+      <td><button type="reset" id="d" >Reset</td>
+    </tr>
+  </table>
+
+</form>
+
+<h1 id="s3"></h1>
+
+
+</body>
+</html>

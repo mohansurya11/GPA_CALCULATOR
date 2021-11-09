@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CGPA</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ceviche+One&family=Fruktur&display=swap" rel="stylesheet">
+	<script type="text/javascript">
+		function cgpa(){
+
+        var v1=document.getElementById("sem1").value;
+        var v2=document.getElementById("sem2").value;
+        var v3=document.getElementById("sem3").value;
+        var v4=document.getElementById("sem4").value;
+
+
+
+
+        var CGPA=((v1)-(-v2)-(-v3)-(-v4))/4;
+        var m=CGPA.toFixed(2);
+        
+        document.getElementById("S1").innerHTML = "YOUR CGPA is "+m;
+        
+      }
+
+      function reset(){
+      	document.getElementById("aa").reset();
+      }
+		
+
+	</script>
+
+
+	<style type="text/css">
+		
+		body{
+	background-image: url('img1.jpg');
+	background-size: cover;
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 20px;
+}
+		
+input[type=text]{
+		border: 2px solid grey;
+		display: inline-block;
+		border-radius: 8px;
+
+}
+h1{
+	font-family: 'Ceviche One', cursive;
+	font-size: 75px;
+	color: red;
+}
+.container{
+	text-align: center;
+	font-size: 30px;
+	font-family: 'Times New Roman';
+	color: white;
+}
+h3{
+	font-family: 'Times New Roman';
+	color: greenyellow;
+
+}
+
+
+
+#sem1,#sem2,#sem3,#sem4{
+	width: 80px;
+	height: 40px;
+	font-size: 80%;
+}
+
+
+
+#c{
+	font-family: Arial;
+    font-size: 30px;
+    color: white;
+    background: #DA0037;
+    border-radius: 10px;
+
+}
+
+#d{
+	font-family: Arial;
+    font-size: 30px;
+    color: white;
+    background: #DA0037;
+    border-radius: 10px;
+}
+h2{
+	color:white;
+	font-family: serif;
+}
+
+
+	</style>
+</head>
+<body>
+	<h1>CGPA CALCULATOR</h1>
+	<form id="aa">
+    <div class="container">
+
+    SEMESTER - I  :   &nbsp<input type="text" id="sem1" placeholder="GPA" value="" required><br><br>
+
+	SEMESTER - II  :   &nbsp<input type="text" id ="sem2" placeholder="GPA" value="" required><br><br>
+
+	SEMESTER - III  :   &nbsp<input type="text" id="sem3" placeholder="GPA" value="" required><br><br>
+
+	SEMESTER - IV  :   &nbsp<input type="text" id ="sem4" placeholder="GPA" value=""required><br><br>
+
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button type="button"  onclick="cgpa()" id="c">Calculate</button>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	<button type="reset" id="d" onclick="reset()">Reset</button>
+	<h3 id="S1"></h3>
+	
+</div>
+</body>
+</html>
+

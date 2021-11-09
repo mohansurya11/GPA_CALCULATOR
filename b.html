@@ -1,0 +1,85 @@
+<html>
+<body>
+	<head>
+	<meta charset="utf-8">
+	<title>GPA CAlCULATION</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ceviche+One&family=Fruktur&family=Fugaz+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="gpa.css">
+
+
+  
+	<script type="text/javascript" src="gpa.js"></script>
+</head>
+<form Name="GPACalcForm" method="post">
+	<h1><center>GPA CALCULATOR</center></h1>
+	<h2><center>SEMESTER II</center></h2>
+  <h2><center>(Out of 100 Marks)</center></h2>
+  <table BORDER="5" BGCOLOR="#C0C0C0" CELLPADDING="5" CELLSPACING="2" align="CENTER" >
+    <tr>
+      <th>Subjects</th>
+      <th>Marks</th>
+      
+    </tr>
+    <tr>
+      <td>Fundaments of Digital Systems</td>
+      <td><input TYPE="Number"  id="M1" min="0" max="100"></td>
+      
+    </tr>
+    <tr>
+      <td>Programming in C and C++</td>
+      <td><input TYPE="Number"  id="M2" min="0" max="100"></td>
+      
+    </tr>
+    <tr>
+      <td>Data Structures</td>
+      <td><input TYPE="Number"  id="M3" min="0" max="100"></td>
+      
+    </tr>
+    <tr>
+      <td>Engineering Drawings</td>
+      <td><input TYPE="Number"  id="M4" min="0" max="100"></td>
+      
+    </tr>
+    <tr>
+      <td>Engineering Mathematics II</td>
+      <td><input TYPE="Number"  id="M5" min="0" max="100"></td>
+      
+    </tr>
+    <tr>
+      <td>Physics for Engineers</td>
+      <td><input TYPE="Number"  id="M6" min="0" max="100"></td>
+      
+    </tr>
+    <tr>
+      <td>Data Structures Lab</td>
+      <td><input TYPE="Number"  id="M7" min="0" max="100"></td>
+      
+    </tr>
+
+    <tr>
+      <td>Digital Systems Lab</td>
+      <td><input TYPE="Number"  id="M8" min="0" max="100"></td>
+      
+    </tr>
+
+    <tr>
+      <td>Physics Lab(Out of 100)</td>
+      <td><input TYPE="Number"  id="M9" min="0" max="100"></td>
+      
+    </tr>
+   
+    <tr ALIGN="CENTER">
+      <td><button type="button" id="c" onclick="sem2calc()">Calculate</button>
+      <td><button type="reset" id="d" >Reset</td>
+    </tr>
+  </table>
+
+</form>
+
+<h1 id="s3"></h1>
+
+
+</body>
+</html>

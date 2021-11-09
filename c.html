@@ -1,0 +1,84 @@
+<html>
+<body>
+	<head>
+	<meta charset="utf-8">
+	<title>GPA CAlCULATION</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ceviche+One&family=Fruktur&family=Fugaz+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="gpa.css">
+
+
+  
+	<script type="text/javascript" src="gpa.js"></script>
+</head>
+<form Name="GPACalcForm" method="post">
+	<h1><center>GPA CALCULATOR</center></h1>
+	<h2><center>SEMESTER III</center></h2>
+  <h2><center>(Out of 100 Marks)</center></h2>
+  <table BORDER="5" BGCOLOR="#C0C0C0" CELLPADDING="5" CELLSPACING="2" align="CENTER">
+    <tr>
+      <th>Subjects</th>
+      <th>Marks</th>
+      
+    </tr>
+    <tr>
+      <td>Database Management Systems</td>
+      <td><input TYPE="Number"  id="M1" min="0" max="100"></td>
+      
+    </tr>
+    <tr>
+      <td>Theory of Computation</td>
+      <td><input TYPE="Number"  id="M2" min="0" max="100"></td>
+      
+    </tr>
+    <tr>
+      <td>Software Engineering</td>
+      <td><input TYPE="Number"  id="M3" min="0" max="100"></td>
+      
+    </tr>
+    <tr>
+      <td>Advance Data Structures</td>
+      <td><input TYPE="Number"  id="M4" min="0" max="100"></td>
+      
+    </tr>
+    <tr>
+      <td>programming in Java</td>
+      <td><input TYPE="Number"  id="M5" min="0" max="100"></td>
+      
+    </tr>
+    <tr>
+      <td>Discrete Mathematics</td>
+      <td><input TYPE="Number"  id="M6" min="0" max="100"></td>
+      
+    </tr>
+    <tr>
+      <td>Code Optimization and Debugging-I(Out of 100)</td>
+      <td><input TYPE="Number"  id="M7" min="0" max="100"></td>
+      
+    </tr>
+
+    <tr>
+      <td>Database Management Systems Lab</td>
+      <td><input TYPE="Number"  id="M8" min="0" max="100"></td>
+      
+    </tr>
+
+    <tr>
+      <td>Programming in Java lab</td>
+      <td><input TYPE="Number"  id="M9" min="0" max="100"></td>
+      
+    </tr>
+   
+    <tr ALIGN="CENTER">
+      <td><button type="button" id="c" onclick="sem3calc()">Calculate</button>
+        <td><button type="reset" id="d" >Reset</td>
+    </tr>
+  </table>
+
+</form>
+<h1 id="s3"></h1>
+
+
+</body>
+</html>
