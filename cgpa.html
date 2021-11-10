@@ -22,6 +22,23 @@
         var m=CGPA.toFixed(2);
         
         document.getElementById("S1").innerHTML = "YOUR CGPA is "+m;
+	if(m>=9){
+	document.getElementById("s4").innerHTML = " First Class - Exemplary";
+
+}
+else if (m>=7.50 && m<9.0) {
+	document.getElementById("s4").innerHTML = " First Class with Distinction";
+
+
+}
+else if(m>=6.00 && m<7.50){
+	document.getElementById("s4").innerHTML = " First Class";
+
+}
+else if(m>=5.00 && m<6.00){
+	document.getElementById("s4").innerHTML = " Second Class" ;
+}		
+	
         
       }
 
@@ -119,6 +136,7 @@ h2{
 	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button type="button"  onclick="cgpa()" id="c">Calculate</button>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 	<button type="reset" id="d" onclick="reset()">Reset</button>
 	<h3 id="S1"></h3>
+	<h3 id="s4"></h3>
 	
 </div>
 </body>
